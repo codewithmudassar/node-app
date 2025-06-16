@@ -12,7 +12,7 @@ const Blog = () => {
   if (!confirmDelete) return;
 
   try {
-    const res = await fetch(`http://localhost:4500/api/blog/${id}`, {
+    const res = await fetch(`https://node-backend-production-84ff.up.railway.app/api/blog/${id}`, {
       method: 'DELETE',
     });
 
@@ -31,7 +31,7 @@ const Blog = () => {
 
   const blogFetch = async () => {
     try {
-      const res = await fetch("http://localhost:4500/api/blog");
+      const res = await fetch("https://node-backend-production-84ff.up.railway.app/api/blog");
       const data = await res.json();
       setBlog(data.blogs);
     } catch (err) {

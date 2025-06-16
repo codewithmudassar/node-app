@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const res = await fetch('http://localhost:4500/api/blog');
+                const res = await fetch('https://node-backend-production-84ff.up.railway.app/api/blog');
                 if (!res.ok) {
                     throw new Error('Failed to fetch blogs');
                 }

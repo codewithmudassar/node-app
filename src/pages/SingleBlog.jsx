@@ -12,7 +12,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`http://localhost:4500/api/blog/${id}`);
+        const res = await fetch(`https://node-backend-production-84ff.up.railway.app/api/blog/${id}`);
         if (!res.ok) {
           throw new Error('Blog not found');
         }
