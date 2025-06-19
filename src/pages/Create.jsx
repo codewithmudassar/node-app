@@ -128,7 +128,7 @@ setTimeout(() => {
                                 name="title"
                                 value={formData.title}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none transition-colors"
                                 placeholder="Enter your blog title"
                             />
                         </div>
@@ -147,7 +147,7 @@ setTimeout(() => {
                                 name="author"
                                 value={formData.author}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none transition-colors"
                                 placeholder="Your name"
                             />
                         </div>
@@ -188,7 +188,7 @@ setTimeout(() => {
                                             <div className="flex text-sm text-gray-600">
                                                 <label
                                                     htmlFor="image-upload"
-                                                    className="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500"
+                                                    className="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none"
                                                 >
                                                     <span>Upload an image</span>
                                                     <input
@@ -200,7 +200,7 @@ setTimeout(() => {
                                                         onChange={handleImageChange}
                                                     />
                                                 </label>
-                                                <p className="pl-1">or drag and drop</p>
+                                                {/* <p className="pl-1">or drag and drop</p> */}
                                             </div>
                                             <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
                                         </>
@@ -223,7 +223,7 @@ setTimeout(() => {
                                 rows={8}
                                 value={formData.desc}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none transition-colors resize-none"
                                 placeholder="Write your blog content here..."
                             />
                         </div>

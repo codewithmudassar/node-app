@@ -81,7 +81,7 @@ const About = () => {
             {/* Stats Section */}
             <div className="relative z-10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 cursor-pointer">
                         {stats.map((stat, index) => (
                             <div
                                 key={index}
@@ -104,7 +104,7 @@ const About = () => {
                         and a beautiful experience.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 cursor-pointer">
                     {features.map((feature, index) => (
                         <div
                             key={index}
@@ -127,7 +127,7 @@ const About = () => {
                             These principles guide everything we do and shape our platform's future.
                         </p>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-3 gap-8 cursor-pointer">
                         {values.map((value, index) => (
                             <div
                                 key={index}
@@ -154,7 +154,7 @@ const About = () => {
                                 Join our community of writers and share your stories with the world.
                             </p>
                             <button
-                                onClick={() => navigate('/create')}
+                                onClick={() => navigate('/createblog')}
                                 className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-600 focus:ring-white transition-colors"
                             >
                                 Create Your First Post
