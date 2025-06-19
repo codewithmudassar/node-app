@@ -76,7 +76,7 @@ const Home = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
-                                to="/create"
+                                to="/createblog"
                                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-gray-50 transition-colors"
                             >
                                 Start Writing

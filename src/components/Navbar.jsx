@@ -1,9 +1,7 @@
-import React, { useContext, useState } from "react";
-import { CartContext } from "./Context";
-import { ShoppingCart, Menu, X } from "lucide-react";
+import React, {  useState } from "react";
+import {  Menu, X } from "lucide-react";
 
 const Navbar = () => {
-  const { cart } = useContext(CartContext);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
