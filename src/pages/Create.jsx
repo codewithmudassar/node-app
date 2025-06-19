@@ -54,7 +54,7 @@ const Create = () => {
         }
 
         try {
-            const res = await fetch("http://localhost:4500/api/blog", {
+            const res = await fetch("https://node-backend-production-84ff.up.railway.app/api/blog", {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
